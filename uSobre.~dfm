@@ -1,0 +1,102 @@
+inherited frmSobre: TfrmSobre
+  Width = 310
+  Height = 234
+  Caption = 'OrtoControl - Desenvolvido por Karan Alves Pereira'
+  OldCreateOrder = True
+  OnKeyDown = FormKeyDown
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Label1: TLabel
+    Visible = False
+  end
+  object Label2: TLabel [1]
+    Left = 8
+    Top = 80
+    Width = 275
+    Height = 19
+    Caption = 'Desenvolvido por: Karan Alves Pereira'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsItalic]
+    ParentFont = False
+  end
+  object Label3: TLabel [2]
+    Left = 80
+    Top = 48
+    Width = 128
+    Height = 18
+    Caption = 'OrtoControl v.1.0'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Label4: TLabel [3]
+    Left = 31
+    Top = 104
+    Width = 230
+    Height = 19
+    Caption = 'E-mail: karanalpe@hotmail.com'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsItalic]
+    ParentFont = False
+  end
+  object Label5: TLabel [4]
+    Left = 61
+    Top = 128
+    Width = 169
+    Height = 19
+    Caption = 'Telefone: 48 9149-0912'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsItalic]
+    ParentFont = False
+  end
+  inherited Panel1: TPanel
+    Width = 294
+    inherited lblTitulo: TLabel
+      Width = 49
+      Caption = 'Sobre'
+    end
+  end
+  inherited edtCodigo: TEdit
+    Left = -66
+    Top = 50
+    Visible = False
+  end
+  inherited Panel2: TPanel
+    Top = 155
+    Width = 294
+    inherited BitBtn1: TBitBtn
+      Left = 97
+      OnClick = BitBtn1Click
+      OnKeyDown = FormKeyDown
+    end
+    inherited BitBtn2: TBitBtn
+      Left = 336
+      Visible = False
+      OnClick = BitBtn2Click
+    end
+  end
+  inherited qryPadrao: TZQuery
+    Left = 224
+    Top = 8
+  end
+  inherited qryConsultaUltimaCodigo: TZQuery
+    Left = 272
+    Top = 8
+  end
+  inherited dsQryPadrao: TDataSource
+    Left = 192
+    Top = 8
+  end
+end

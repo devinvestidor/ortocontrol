@@ -1,0 +1,441 @@
+inherited frmCadastroCliente: TfrmCadastroCliente
+  Left = 328
+  Top = 180
+  Width = 607
+  Height = 425
+  Caption = 'OrtoControl - Desenvolvido por Karan Alves Pereira'
+  OldCreateOrder = True
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label2: TLabel [1]
+    Left = 8
+    Top = 88
+    Width = 37
+    Height = 16
+    Caption = 'Nome'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel [2]
+    Left = 8
+    Top = 132
+    Width = 59
+    Height = 16
+    Caption = 'Endere'#231'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel [3]
+    Left = 360
+    Top = 132
+    Width = 28
+    Height = 16
+    Caption = 'Num'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel [4]
+    Left = 432
+    Top = 132
+    Width = 84
+    Height = 16
+    Caption = 'Complemento'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel [5]
+    Left = 8
+    Top = 172
+    Width = 36
+    Height = 16
+    Caption = 'Bairro'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label7: TLabel [6]
+    Left = 232
+    Top = 172
+    Width = 44
+    Height = 16
+    Caption = 'Cidade'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label8: TLabel [7]
+    Left = 408
+    Top = 172
+    Width = 18
+    Height = 16
+    Caption = 'UF'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label9: TLabel [8]
+    Left = 480
+    Top = 172
+    Width = 27
+    Height = 16
+    Caption = 'CEP'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label10: TLabel [9]
+    Left = 8
+    Top = 220
+    Width = 71
+    Height = 16
+    Caption = 'CPF / CNPJ'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label11: TLabel [10]
+    Left = 176
+    Top = 220
+    Width = 42
+    Height = 16
+    Caption = 'RG / IE'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label15: TLabel [11]
+    Left = 8
+    Top = 268
+    Width = 75
+    Height = 16
+    Caption = 'Observa'#231#227'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  inherited Panel1: TPanel
+    Width = 591
+    inherited lblTitulo: TLabel
+      Width = 160
+      Caption = 'Cadastro de Cliente'
+    end
+  end
+  inherited edtCodigo: TEdit
+    CharCase = ecUpperCase
+    OnKeyDown = FormKeyDown
+  end
+  inherited Panel2: TPanel
+    Top = 346
+    Width = 591
+    inherited BitBtn1: TBitBtn
+      OnClick = BitBtn1Click
+    end
+    inherited BitBtn2: TBitBtn
+      OnClick = BitBtn2Click
+    end
+  end
+  object edtNome: TEdit [15]
+    Left = 8
+    Top = 104
+    Width = 577
+    Height = 24
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnKeyDown = FormKeyDown
+  end
+  object edtEndereco: TEdit [16]
+    Left = 7
+    Top = 148
+    Width = 346
+    Height = 24
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    OnKeyDown = FormKeyDown
+  end
+  object edtNumero: TEdit [17]
+    Left = 359
+    Top = 148
+    Width = 66
+    Height = 24
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    OnKeyDown = FormKeyDown
+  end
+  object edtComplemento: TEdit [18]
+    Left = 431
+    Top = 148
+    Width = 154
+    Height = 24
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    OnKeyDown = FormKeyDown
+  end
+  object edtBairro: TEdit [19]
+    Left = 7
+    Top = 188
+    Width = 218
+    Height = 24
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    OnKeyDown = FormKeyDown
+  end
+  object edtCidade: TEdit [20]
+    Left = 231
+    Top = 188
+    Width = 170
+    Height = 24
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnKeyDown = FormKeyDown
+  end
+  object edtUf: TEdit [21]
+    Left = 407
+    Top = 188
+    Width = 66
+    Height = 24
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+    OnKeyDown = FormKeyDown
+  end
+  object edtCep: TEdit [22]
+    Left = 479
+    Top = 188
+    Width = 106
+    Height = 24
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+    OnKeyDown = FormKeyDown
+  end
+  object edtCpf: TEdit [23]
+    Left = 7
+    Top = 236
+    Width = 154
+    Height = 24
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    OnKeyDown = FormKeyDown
+  end
+  object edtRg: TEdit [24]
+    Left = 175
+    Top = 236
+    Width = 122
+    Height = 24
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 12
+    OnKeyDown = FormKeyDown
+  end
+  object menObservacao: TMemo [25]
+    Left = 8
+    Top = 288
+    Width = 297
+    Height = 52
+    TabOrder = 13
+    OnKeyDown = FormKeyDown
+  end
+  object gpContato: TGroupBox [26]
+    Left = 314
+    Top = 216
+    Width = 273
+    Height = 121
+    Caption = ' Contato '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 14
+    object Label12: TLabel
+      Left = 8
+      Top = 25
+      Width = 54
+      Height = 16
+      Caption = 'Telefone'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label13: TLabel
+      Left = 136
+      Top = 25
+      Width = 42
+      Height = 16
+      Caption = 'Celular'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label14: TLabel
+      Left = 8
+      Top = 73
+      Width = 34
+      Height = 16
+      Caption = 'Email'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object edtTelefone: TEdit
+      Left = 7
+      Top = 41
+      Width = 122
+      Height = 24
+      CharCase = ecUpperCase
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnKeyDown = FormKeyDown
+    end
+    object edtCelular: TEdit
+      Left = 135
+      Top = 41
+      Width = 122
+      Height = 24
+      CharCase = ecUpperCase
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      OnKeyDown = FormKeyDown
+    end
+    object edtEmail: TEdit
+      Left = 7
+      Top = 89
+      Width = 250
+      Height = 24
+      CharCase = ecUpperCase
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnKeyDown = FormKeyDown
+    end
+  end
+  inherited qryConsultaUltimaCodigo: TZQuery
+    SQL.Strings = (
+      'select max(cl.i_cod_cliente) +1 "Max"'
+      'from cliente cl')
+    object qryConsultaUltimaCodigoMax: TLargeintField
+      FieldName = 'Max'
+      ReadOnly = True
+    end
+  end
+end
